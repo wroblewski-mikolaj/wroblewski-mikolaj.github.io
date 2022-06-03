@@ -1,2 +1,6 @@
 ziemniaczki
+<<<<<<< HEAD
 dobre
+=======
+rowerki
+>>>>>>> pliki-tekstowe
