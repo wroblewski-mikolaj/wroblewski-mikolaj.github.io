@@ -2,5 +2,7 @@ body {
     margin:0;
     background-color: black;
     text-align: center;
-    .link { color: #00FF00; }
+}
+a:link {
+  color: green;
 }
