@@ -1,65 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeah Buddy</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #000;
-        }
-
-        .player {
-            position: relative;
-            display: block;
-            width: min(90vw, 700px);
-            padding: 0;
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-
-        .player img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            transform: translate(-40%, -50%);
-            border-top: 35px solid transparent;
-            border-bottom: 35px solid transparent;
-            border-left: 55px solid white;
-            filter: drop-shadow(0 2px 8px black);
-            pointer-events: none;
-        }
-
-        .player:active {
-            opacity: 0.8;
-        }
-    </style>
-</head>
-
 <body>
-    <button class="player" id="playButton" type="button" aria-label="Play sound">
+    <main class="player">
         <img src="ronnie.gif" alt="Ronnie Coleman">
-        <span class="play-icon"></span>
-    </button>
+
+        <button id="playButton" type="button" aria-label="Play sound">
+            <span class="play-icon"></span>
+        </button>
+    </main>
 
     <audio id="audio" preload="auto">
         <source src="yeah-buddy.mp3" type="audio/mpeg">
@@ -75,4 +21,3 @@
         });
     </script>
 </body>
-</html>
